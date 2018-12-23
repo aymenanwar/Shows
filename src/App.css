@@ -7,23 +7,73 @@ body, html{
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  background-color: rgb(29, 30, 31);
 }
-.navr li{
+
+.jumbotron{
+  background-color: rgb(29, 30, 31);
+  color: #a9adb1; 
+}
+.nav{
+  background-color: #262728;
+}
+.nav li a{
   margin: 0 ;
   display: inline-block ;
+  color: #a9adb1 !important;
 }
 .shows-list{
   margin: 0 auto;
+  width: 70vw;
+  background-color: #262728;
 }
 .shows-list ul{
   list-style-type: none;
+  padding-top: 50px;
 }
 .shows-list li{
   display: inline-block;
-  margin: 10px 30px;
+  margin: 10px 20px;
+  width: 200px;
+  border-bottom: #7d7e7f 1px solid;
 }
 .shows-list img{
-  height: 250px;
+  height: 200px;
+  width: 150px;
+  margin: 0 auto
+}
+
+.list-title{
+  background-color: inherit; 
+  color: #7d7e7f;
+  margin: 20px;
+}
+.card{
+  background-color: #262728;
+  color: rgb(206, 203, 203); 
+  word-wrap: wrap;
+  height: 370px;
+}
+.card-title{
+height: 35px;
+width: 150px;
+overflow: hidden;
+color: aliceblue !important;
+background-color: transparent;
+border: none;
+font-size: 20px;
+text-align: left;
+}
+
+.card span,  .btn{
+  color: #a9adb1;
+}
+.card span{
+  margin-right: 20px;
+  font-size: 14px;
+}
+.card .btn {
+  padding: 3px !important;
 }
 .shows{
   display: flex;
@@ -35,7 +85,7 @@ body, html{
 .show{
   padding: 20px;
   border-radius: 30px;
-  background-color: rgb(32, 43, 43) !important;
+  background-color: #262728 !important;
   color: beige;
   font-family: 'Oswald', sans-serif;
 }

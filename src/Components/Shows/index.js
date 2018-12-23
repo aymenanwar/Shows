@@ -11,19 +11,19 @@ export default ({match: {url}, shows}) =>
   
     <Fragment>
         <Menu />
+      <h1 className='list-title jumbotron '>Choose a show then scroll down for details</h1>
       <Grid className='shows-list'>
-      <h3>Choose a show then scroll down for details</h3>
         <ul>
-            {shows.map(({ id,title, image, subTitle, rating }) =>
+            {shows.map(({ id,title, image, country, rating }) =>
             <li key={id}>
-                <div className="card" style={{width: "18rem"}}>
-            <img className="card-img-top" src={image} alt="Card image cap" />
-            <div className="card-body">
-                <h5 className="card-title">{title} <span className="badge badge-pill badge-light">{rating}</span></h5>
-                <p className="card-text">{subTitle}</p>
-                <Link to={`${url}/${id}`} className="btn btn-primary">Details</Link>
-            </div>
-        </div>
+                <div className="card">
+                    <img className="card-img-top" src={image} alt="Card image cap" />
+                    <div className="card-body">
+                        <Link to={`${url}/${id}`} className="btn btn-dark card-title">{title}</Link>
+                        <p className="card-text"><span className="badge badge-pill badge-dark">{country}</span><span className="badge badge-pill badge-dark">{rating}</span></p>
+                        <Link to={`${url}/${id}`} className="btn btn-dark">Details</Link>
+                    </div>
+                </div>
             </li>
             )}
         </ul>
